@@ -91,3 +91,4 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 - **Fecha Límite**: La hackathon deberá completarse antes del 15 de abril a las 18 horas, momento en el cual los repositorios serán revisados.
 
 ¡Buena suerte a todos! ⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub.
+Henry Andre Valle Enriquez
