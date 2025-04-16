@@ -31,6 +31,5 @@ def procesar_entrada(entrada):
             return num1 * num2
         except ValueError:
             raise ValueError("Entrada inválida: no se pudo convertir a número")
-
-    # Si no contiene '*', lanzamos excepción por operación no implementada
-    raise NotImplementedError("Operación no implementada")
+    else:
+        raise NotImplementedError("Operación no implementada")
