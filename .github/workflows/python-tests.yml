@@ -29,5 +29,4 @@ jobs:
 
       - name: Ejecutar pruebas
         run: |
-          pexport PYTHONPATH=$(pwd)/src
-          python -m unittest tests.test
+          PYTHONPATH=$(pwd)/src python -m unittest tests.test
