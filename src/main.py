@@ -29,10 +29,9 @@ def calculate(entrada):
             except ValueError:
                 raise ValueError("Entrada inválida")
         
-   else:
+        raise NotImplementedError("Operación no implementada")
 
-        raise NotImplementedError("Operación no implementada")         
-
+    
     if '/' in entrada:
         partes = entrada.split('/')
         if len(partes) != 2:
@@ -46,7 +45,4 @@ def calculate(entrada):
         except ValueError:
             raise ValueError("Entrada inválida")
 
-    else:
-    raise NotImplementedError("Operación no implementada")
-
-      
+    raise NotImplementedError("Operación no implementada")     
