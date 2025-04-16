@@ -33,3 +33,4 @@ def procesar_entrada(entrada):
             raise ValueError("Entrada inválida: no se pudo convertir a número")
     else:
         raise NotImplementedError("Operación no implementada")
+    #HAVE_
