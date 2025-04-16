@@ -1,5 +1,6 @@
 def calculate(entrada):
     entrada = entrada.strip()
+    #verificacion
     if not entrada:
         raise ValueError("Entrada vacía")
     # Validar las operaciones
