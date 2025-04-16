@@ -35,3 +35,5 @@ def calculate(entrada):
                 return num1 * num2
             except ValueError:
                 raise ValueError("Entrada inválida")
+    else:
+        raise SyntaxError("Sintaxis invalidad para las operaciones")
