@@ -14,11 +14,18 @@ def calculate(entrada):
             return num1 + num2
         except ValueError:
             raise ValueError("Entrada inválida")
-    else:
-        raise NotImplementedError("Solo se permite la suma por ahora")
+    elif '-' in entrada:
+        partes = entrada.split('-')
+        if len(partes) != 2:
+            raise SyntaxError("Sintaxis inválida para la resta")
+        try:
+            num1 = float(partes[0].strip())
+            num2 = float(partes[1].strip())
+            return num1 - num2
+        except ValueError:
+            raise ValueError("Entrada inválida")
 
-
-    if '*' in entrada:
+    elif '*' in entrada:
             partes = entrada.split('*')
             if len(partes) != 2:
                 raise SyntaxError("Sintaxis inválida para la multiplicación")
@@ -28,14 +35,3 @@ def calculate(entrada):
                 return num1 * num2
             except ValueError:
                 raise ValueError("Entrada inválida")
-
-        raise NotImplementedError("Operación no implementada")
-    if '-' entrada:
-	partes = entrada.slit('-')
-	if len(partes) != 2:
-            raise SyntaxError("Sintaxis inválida para la resta")
-        num1 = float(partes[0].strip())
-        num2 = float(partes[1].strip())
-        return num1 - num2
-
-
