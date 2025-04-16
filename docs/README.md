@@ -2,7 +2,7 @@ Joel M Cayllahua Hilario: soy estudiante de ciencias de la computacion y estoy e
 
 Diego Alarcon Ballivian : soy ds estoy en tercer ciclo
 
-Henry Andre Valle Enriquez
+Henry Andre Valle Enriquez: Estudiante de cs, 19 años.
 
 Benjamin Mario Augusto Suarez Arzapal : Soy de cs y estoy en el tercer ciclo
 
