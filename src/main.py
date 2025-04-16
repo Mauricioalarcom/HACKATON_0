@@ -17,7 +17,7 @@ def calculate(entrada):
             num1 = float(partes[0].strip())
             num2 = float(partes[1].strip())
             return num1 + num2
-        except ValueError:
+        except:
             raise ValueError("Entrada inválida")
         
     elif '-' in entrada:
@@ -28,7 +28,7 @@ def calculate(entrada):
             num1 = float(partes[0].strip())
             num2 = float(partes[1].strip())
             return num1 - num2
-        except ValueError:
+        except:
             raise ValueError("Entrada inválida")
 
     elif '*' in entrada:
@@ -39,9 +39,10 @@ def calculate(entrada):
                 num1 = float(partes[0].strip())
                 num2 = float(partes[1].strip())
                 return num1 * num2
-            except ValueError:
+            except:
                 raise ValueError("Entrada inválida")
-    elif '/' in entrada:
+            
+    if '/' in entrada:
         partes = entrada.split('/')
         if len(partes) != 2:
             raise SyntaxError("Sintaxis inválida para la división")
@@ -51,7 +52,7 @@ def calculate(entrada):
             if num2 == 0:
                 raise ZeroDivisionError("No se puede dividir entre cero")
             return num1 / num2
-        except ValueError:
+        except:
             raise ValueError("Entrada inválida")
     else:
-        raise NotImplementedError("Operación no implementada")
+        raise SyntaxError("Operación no implementada")
